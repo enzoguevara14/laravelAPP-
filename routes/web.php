@@ -19,3 +19,6 @@ Route::get('/', function () {
 
 
 Route::get('/admin','App\Http\Controllers\AdminController@index');
+Route::get('/admin/heroes','App\Http\Controllers\HeroController@index')->name ('admin.heroes');
+Route::get('/admin/items','App\Http\Controllers\ItemController@index')->name ('admin.items');
+Route::get('/admin/enemies','App\Http\Controllers\EnemiesController@index')->name ('admin.enemies');
