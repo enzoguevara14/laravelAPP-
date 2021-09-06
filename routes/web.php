@@ -17,7 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get ('/home/{name}',function($name){
-    return view('home',['name' => $name]);
-   // return "HOLA ". $name. "! como estas hoy ?"; 
-})->where('name', '[A-Za-z]+');
+
+Route::get('/admin','App\Http\Controllers\AdminController@index');
